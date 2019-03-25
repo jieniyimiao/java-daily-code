@@ -7,7 +7,7 @@ package com.sino.daily.code_2019_3_25;
  */
 public class SvnAddTest {
     public static void main(String[] args) {
-        System.out.println("git 不能添加和提交一个空目录");
+        System.out.println("git 不能add一个空目录, 如果想add一个空目录，在它下面touch一个.gitignore文件吧");
     }
 
 }
