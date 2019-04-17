@@ -11,19 +11,21 @@ public class ThreadForExtend extends Thread {
     @Override
     public void run() {
         System.out.println("this thead for extends thead!");
+        System.out.println(Thread.currentThread().getName());
     }
 
     // 设置线程名字
-    public ThreadForExtend() {
-        this.setName("thread-threadForExtend");
+    public ThreadForExtend(String name) {
+        this.setName(name);
     }
 
     public static void main(String[] args) throws InterruptedException {
         System.out.println("--step1--");
-        ThreadForExtend t = new ThreadForExtend();
+        ThreadForExtend t = new ThreadForExtend("thread-threadForExtend");
         t.start();
         System.out.println("--step2--");
         TimeUnit.SECONDS.sleep(2);
+        System.out.println(Thread.currentThread().getName());
         System.out.println("--step3--");
     }
 }
