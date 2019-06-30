@@ -20,7 +20,7 @@ dependencies {
     compile 'org.jetbrains:annotations:16.0.3'
 }
 
-task "create-dirs" << {
+task "create-dirs" {
     sourceSets*.java.srcDirs*.each { it.mkdirs() }
     sourceSets*.resources.srcDirs*.each { it.mkdirs() }
 }
