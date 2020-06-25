@@ -1,5 +1,6 @@
 apply plugin: 'java'
 apply plugin: 'idea'
+apply plugin: 'application'
 
 group = 'com.sinosun'
 version = '0.0.1-SNAPSHOT'
@@ -25,3 +26,4 @@ task "create-dirs" {
     sourceSets*.resources.srcDirs*.each { it.mkdirs() }
 }
 [compileJava, javadoc, compileTestJava]*.options*.encoding = 'UTF-8'
+mainClassName = 'com.sino.daily.code_2020_6_25.ApplicationPlugin'
