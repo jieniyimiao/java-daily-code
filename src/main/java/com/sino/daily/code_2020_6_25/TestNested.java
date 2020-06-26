@@ -1,5 +1,6 @@
 package com.sino.daily.code_2020_6_25;
 
+import org.junit.Assert;
 import org.junit.jupiter.api.*;
 
 import java.time.Duration;
